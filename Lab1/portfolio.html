@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Divyadharshini R | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #1e88e5; /* Blue 600 */
+        --accent: #0d47a1; /* Blue 900 */
+        --bg: #e3f2fd; /* Light Blue Background */
+        --light-bg: #e8f0fe; /* Very Light Blue */
+        --text-dark: #1a237e; /* Dark Blue Text */
+        --text-soft: #5c6bc0; /* Soft Blue Text */
+        --card-border: #90caf9; /* Blue Border */
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: var(--bg);
+        color: var(--text-dark);
+        scroll-behavior: smooth;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #fff;
+        padding: 18px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        border-bottom: 2px solid var(--card-border);
+      }
+
+      .logo {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: var(--accent);
+      }
+
+      nav a {
+        margin-left: 24px;
+        text-decoration: none;
+        color: var(--text-dark);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: color 0.3s;
+      }
+
+      nav a:hover {
+        color: var(--primary);
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+        background-color: var(--light-bg);
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      .hero-text {
+        flex: 1 1 400px;
+        max-width: 500px;
+        padding: 20px;
+        margin: 0 auto;
+      }
+
+      .hero-text h1 {
+        font-size: 2.8rem;
+        margin-bottom: 12px;
+      }
+
+      .hero-img {
+        flex: 1 1 300px;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .hero-img img {
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid var(--card-border);
+        background-color: white;
+      }
+
+      .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: var(--primary);
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+        transition: background-color 0.3s;
+      }
+
+      .button:hover {
+        background-color: var(--accent);
+      }
+
+      .social-icons {
+        margin-top: 18px;
+      }
+
+      .social-icons a {
+        color: var(--text-dark);
+        margin-right: 15px;
+        font-size: 1.3rem;
+        transition: color 0.3s;
+      }
+
+      .social-icons a:hover {
+        color: var(--accent);
+      }
+
+      main section {
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+      }
+
+      h2 {
+        font-size: 1.8rem;
+        color: var(--accent);
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 6px;
+        margin-bottom: 24px;
+      }
+
+      .card {
+        background-color: var(--bg);
+        border: 1.5px solid var(--card-border);
+        padding: 18px 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 5px rgba(150, 50, 80, 0.07);
+      }
+
+      .card h3 {
+        color: #4a2c3f;
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+        color: #4b2b3a;
+      }
+
+      footer {
+        background-color: var(--light-bg);
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 2px solid var(--card-border);
+      }
+
+      @media (max-width: 768px) {
+        .hero {
+          flex-direction: column;
+          padding-top: 60px;
+        }
+
+        .hero-text {
+          text-align: center;
+        }
+
+        .hero-img img {
+          width: 180px;
+          height: 180px;
+        }
+
+        .hero-text h1 {
+          font-size: 2.2rem;
+        }
+
+        nav a {
+          margin-left: 12px;
+          font-size: 0.9rem;
+        }
+
+        h2 {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">Divyadharshini</div>
+      <nav>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hi There,<br />I'm <span>Divyadharshini</span></h1>
+        <p>
+          I'm passionate about Web Dev, IoT, and Machine Learning. Design and
+          innovation drive me.
+        </p>
+        <a href="#education" class="button">Explore More</a>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/divyadharshinir/" target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/d1vyadharsh1n1" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:divyadharshinir257@gmail.com"
+            ><i class="fas fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="portfolio.png" alt="Divyadharshini avatar or illustration" />
+      </div>
+    </section>
+
+    <main>
+      <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+          <h3>Shiv Nadar University, Chennai</h3>
+          <p>
+            <strong>Degree:</strong> B.Tech in Computer Science (Internet of
+            Things)
+          </p>
+          <p><strong>Duration:</strong> Aug 2023 – May 2027</p>
+          <p><strong>CGPA:</strong> 8.92v*</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="card">
+          <p>
+            <strong>Languages & Tools:</strong> Python, C++, C, JavaScript,
+            HTML, CSS, MongoDB, MySQL
+          </p>
+          <p>
+            <strong>Technologies:</strong> Node.js, Express, Reactjs, MediaPipe,
+            TensorFlow, scikit-learn, Blynk, OpenCV, Arduino IDE, Git, Github
+          </p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="card">
+          <h3>ASL Recognition System</h3>
+          <p>
+            Built using MediaPipe and scikit-learn with 99% accuracy to
+            recognize American Sign Language gestures.
+          </p>
+        </div>
+        <div class="card">
+          <h3>DeepFake Detection System</h3>
+          <p>
+            Used MesoNet with CNN + RNN for video-based deepfake detection,
+            integrated with Flask for frontend.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Baby Monitoring System</h3>
+          <p>
+            Developed with NodeMCU ESP8266 and Blynk; used temperature,
+            humidity, light, and sound sensors for baby safety.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Vehicle Rental Management System</h3>
+          <p>
+            Full-stack web app with Node.js and MySQL backend to manage
+            bookings, pricing, and vehicles.
+          </p>
+        </div>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <div class="card">
+          <h3>AWS AI & ML Scholar</h3>
+          <p><strong>Organization:</strong> Amazon Web Services</p>
+          <p><strong>Duration:</strong> Jun 2024 – Present</p>
+          <p>
+            Completed DeepRacer prerequisites; enrolled in Udacity’s AI
+            Programming with Python Nanodegree ($4000 scholarship).
+          </p>
+        </div>
+        <div class="card">
+          <h3>Open Source Contributor</h3>
+          <p><strong>Program:</strong> GirlScript Summer of Code</p>
+          <p><strong>Duration:</strong> May 2024 – Aug 2024</p>
+          <p>
+            Contributed to open-source projects, submitted 6 PRs, earned API
+            Postman badge, learned collaboration and GitHub workflows.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Junior Core Member</h3>
+          <p>
+            <strong>Club:</strong> Aura – Design Club, Shiv Nadar University
+          </p>
+          <p><strong>Duration:</strong> 2024 – Present</p>
+          <p>
+            Created event posters, supported brand design & visual consistency.
+            Contributed to club’s marketing internship activities.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Competitive Programming Vertical</h3>
+          <p><strong>Club:</strong> SNUC Coding Club</p>
+          <p><strong>Duration:</strong> 2024 – Present</p>
+          <p>
+            Engaged in problem-solving, participated in contests (Codeforces,
+            LeetCode, CodeChef), focused on 800-rated problems and beyond.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact">
+      <h2>Contact</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/divyadharshinir/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/d1vyadharsh1n1" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a href="mailto:divyadharshinir257@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>
