@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Event Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <form id="registrationForm" novalidate>
+        <!-- Step 1 -->
+        <div class="form-step active">
+          <h2>👤 Personal Info</h2>
+          <label>Full Name</label>
+          <input type="text" id="name" required />
+          <small class="error"></small>
+
+          <label>Email</label>
+          <input type="email" id="email" required />
+          <small class="error"></small>
+
+          <label>Phone</label>
+          <input type="text" id="phone" required />
+          <small class="error"></small>
+
+          <button type="button" class="next-btn">Next ➡</button>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="form-step">
+          <h2>🎯 Event Details</h2>
+          <label>Age</label>
+          <input type="number" id="age" required />
+          <small class="error"></small>
+
+          <label>Event Type</label>
+          <select id="eventType" required>
+            <option value="">-- Select --</option>
+            <option>Workshop</option>
+            <option>Seminar</option>
+            <option>Sports</option>
+          </select>
+          <small class="error"></small>
+
+          <label>
+            <input type="checkbox" id="terms" required />
+            I agree to the terms & conditions
+          </label>
+          <small class="error"></small>
+
+          <button type="button" class="prev-btn">⬅ Back</button>
+          <button type="button" class="next-btn">Next ➡</button>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="form-step">
+          <h2>📋 Review & Submit</h2>
+          <div id="preview">
+            <p><strong>Name:</strong> <span id="prevName"></span></p>
+            <p><strong>Email:</strong> <span id="prevEmail"></span></p>
+            <p><strong>Phone:</strong> <span id="prevPhone"></span></p>
+            <p><strong>Age:</strong> <span id="prevAge"></span></p>
+            <p><strong>Event:</strong> <span id="prevEvent"></span></p>
+          </div>
+          <button type="button" class="prev-btn">⬅ Back</button>
+          <button type="submit">✅ Confirm & Register</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
